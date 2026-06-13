@@ -1,268 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jonathan Edwards - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Jonathan Edwards — Mechanical Engineer & Cybersecurity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navigation -->
+<div class="bg-grid"></div>
 <nav class="navbar">
   <div class="container nav-content">
-    <div class="logo">Jonathan Edwards</div>
-
-    <!-- Hamburger menu for mobile -->
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
+    <div class="logo"><span class="dot"></span>Jonathan Edwards</div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
     <ul class="nav-links" id="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#cybersecurity">Cybersecurity</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="resources/JONATHAN EDWARDS RESUME.pdf" class="nav-cta" download>Download Résumé</a></li>
     </ul>
-
-    <a href="resources/JONATHAN EDWARDS RESUME.pdf" class="btn" download>Download Resume</a>
   </div>
 </nav>
-
-<script>
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
-
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-</script>
-
-
-  <!-- Hero -->
-  <header class="hero">
-    <div class="container hero-content">
-      <img src="resources/moi.jpg" alt="Jonathan Edwards" class="hero-img">
-      <div class="hero-text">
-        <h1>Hi, I'm <span class="highlight">Jonathan Edwards</span></h1>
-        <h2><span class="highlight">A Mechanical Engineering Student</span> & <span class="highlight">Cybersecurity Enthusiast</span></h2>
-        <p>Bridging the gap between mechanical systems and digital security. Passionate about building efficient machines and securing the systems that power tomorrow.</p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn">View My Work</a>
-          <a href="#contact" class="btn-outline">Get In Touch</a>
-        </div>
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-eyebrow">Kakamega, Kenya · Available Aug 2026</div>
+      <h1>Mechanical engineer,<br>built for <span class="accent">systems</span><br>that hold under load.</h1>
+      <p class="hero-sub">CAD &amp; CNC // CFD on Ansys Fluent // Embedded systems // Cybersecurity</p>
+      <p class="lead">I design and analyze mechanical systems — from CubeSat structures to maize shredders — then ask the second question most engineers skip: what happens when someone tries to break into the system that controls it. Currently a mechanical engineering attachee at the Kenya Space Agency.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="resources/JONATHAN EDWARDS RESUME.pdf" class="btn-ghost" download>Download Résumé <i class="fa-solid fa-arrow-down"></i></a>
       </div>
     </div>
-  </header>
-
-  <!-- About -->
-  <section id="about" class="section bg-light">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <p>I’m a multidisciplinary student engineer with experience in both <strong>mechanical design</strong> and <strong>cybersecurity</strong>. My goal is to design systems that are not only efficient but also resilient against digital threats.</p><br>
-      <h3>Education & Achievements</h3>
-      <ul class="edu-list">
-        <li><strong>Dedan Kimathi University of Technology</strong> - BSc in Mechanical Engineering</li>
-        <li><strong>Power Learn Project</strong> - Software Development</li>
-        <li><strong>ISC2</strong> - Cybersecurity</li>
-        <li><strong>Cisco</strong> - Ethical Hacking</li>
-        <li><strong>CompTIA Security+</strong> - Certification</li>
-        <li><strong>Lockheed Martin Training Modules</strong> - (in progress, aerospace systems & cybersecurity)</li>
-      </ul>
+    <div class="blueprint" role="img" aria-label="Line illustration of a CubeSat satellite with solar panels and orbital path">
+      <span class="corner-label tl">FIG. 01 — CUBE-SAT<br>ASSEMBLY, REV B</span>
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#E8E4DC" stroke-width="1.2">
+        <ellipse cx="200" cy="210" rx="160" ry="70" stroke="#5FB4FF" stroke-width="1" stroke-dasharray="3 5" opacity="0.6"/>
+        <rect x="160" y="160" width="80" height="80" stroke-width="1.4"/>
+        <line x1="160" y1="160" x2="180" y2="142" />
+        <line x1="240" y1="160" x2="260" y2="142" />
+        <line x1="160" y1="240" x2="180" y2="222" />
+        <line x1="240" y1="240" x2="260" y2="222" />
+        <line x1="180" y1="142" x2="260" y2="142" stroke-width="1.4"/>
+        <line x1="180" y1="142" x2="180" y2="222" />
+        <line x1="260" y1="142" x2="260" y2="222" />
+        <line x1="180" y1="222" x2="260" y2="222" />
+        <rect x="60" y="180" width="90" height="40" stroke-width="1"/>
+        <line x1="75" y1="180" x2="75" y2="220"/>
+        <line x1="90" y1="180" x2="90" y2="220"/>
+        <line x1="105" y1="180" x2="105" y2="220"/>
+        <line x1="120" y1="180" x2="120" y2="220"/>
+        <line x1="135" y1="180" x2="135" y2="220"/>
+        <rect x="250" y="180" width="90" height="40" stroke-width="1"/>
+        <line x1="265" y1="180" x2="265" y2="220"/>
+        <line x1="280" y1="180" x2="280" y2="220"/>
+        <line x1="295" y1="180" x2="295" y2="220"/>
+        <line x1="310" y1="180" x2="310" y2="220"/>
+        <line x1="325" y1="180" x2="325" y2="220"/>
+        <line x1="150" y1="200" x2="160" y2="200" stroke-width="1.4"/>
+        <line x1="240" y1="200" x2="250" y2="200" stroke-width="1.4"/>
+        <line x1="200" y1="160" x2="200" y2="110" stroke="#FF6B35" stroke-width="1.4"/>
+        <circle cx="200" cy="108" r="3" fill="#FF6B35" stroke="none"/>
+        <circle cx="200" cy="280" r="3" fill="#FF6B35" stroke="none">
+          <animateMotion dur="14s" repeatCount="indefinite" path="M0,0 a160,70 0 1,0 0.1,0" />
+        </circle>
+      </svg>
+      <span class="corner-label br">UNITS: MM<br>SCALE 1:1</span>
     </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title">Featured Projects</h2>
-
-      <!-- Mechanical Projects -->
-      <h3 class="sub-title">Mechanical & Engineering</h3>
-      <div class="grid">
-        <div class="card">
-          <img src="resources/avocado.jpg" alt="Avocado Oil Extractor">
-          <h3>Avocado Oil Extractor</h3>
-          <p>Designed a system to efficiently extract oil using mechanical forces while maximizing yield and energy efficiency.</p>
-        </div>
-        <div class="card">
-          <img src="resources/cob.jpg" alt="Maize Cob Shredder">
-          <h3>Maize Cob Shredder</h3>
-          <p>Designed with a team to help farmers shred maize cobs for easier storage and transport.</p>
-        </div>
-        <div class="card">
-          <img src="resources/arduino.jpg" alt="Ultrasonic sensor">
-          <h3>Arduino Ultrasonic Sensor</h3>
-          <p>Controlled an LED using proximity sensing with Arduino and ultrasonic sensors.</p>
-        </div>
-      </div>
-
-      <!-- Tech Projects -->
-      <h3 class="sub-title">Software & Tech</h3>
-      <div class="grid">
-        <div class="card">
-          <img src="resources/graph.jpg" alt="Graph Plotter">
-          <h3>Graph Plotter</h3>
-          <a href="https://graphplotter-jonah-11s-projects.vercel.app/" target="_blank">Visit Site</a>
-        </div>
-        <div class="card">
-          <img src="resources/work.jpg" alt="Workfinder">
-          <h3>Workfinder</h3>
-          <a href="https://workfinder.netlify.app/" target="_blank">Visit Site</a>
-        </div>
-        <div class="card">
-          <img src="resources/expense.jpg" alt="Expense Tracker">
-          <h3>Expense Tracker</h3>
-          <a href="https://the-001-finance-manager.netlify.app/" target="_blank">Visit Site</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="section bg-light">
-    <div class="container">
-      <h2 class="section-title">Work History</h2>
-
-      <div class="experience-cards">
-        <div class="card">
-          <h3>Mechanical Engineering Attachee – Skyward Airlines, Wilson Airport (Feb 2024 – Apr 2024)</h3>
-          <ol class="experience-list">
-            <li>Participated in aircraft maintenance operations, including A-checks and C-checks per KCAA protocols.</li>
-            <li>Worked on flight control surfaces such as flaps and assisted in servicing deicing boots on turboprop aircraft.</li>
-            <li>Followed airworthiness and safety-critical inspection procedures using Aircraft Maintenance Manuals (AMMs).</li>
-            <li>Maintained aviation security through tool accountability, area clearance procedures, and part traceability.</li>
-            <li>Logged maintenance activities and supported engineering documentation for compliance audits.</li>
-          </ol>
-        </div>
-
-        <div class="card">
-          <h3>Cybersecurity Virtual Experience – Mastercard (Dec 2024)</h3>
-          <ol class="experience-list">
-            <li>Completed a job simulation as an analyst on Mastercard’s Security Awareness Team.</li>
-            <li>Helped identify and report security threats such as phishing.</li>
-            <li>Analyzed areas of the business needing stronger security and developed targeted training courses and procedures.</li>
-          </ol>
-        </div>
-
-        <div class="card">
-          <h3>Mechanical Engineering Attachee – Dedan Kimathi University of Technology (Jan 2024 – Dec 2024)</h3>
-          <ol class="experience-list">
-            <li>Designed and optimized machine components using CAD, cutting material waste by 15% in CNC fabrication.</li>
-            <li>Operated lathe, milling, and drilling machines to produce mechanical parts.</li>
-            <li>Performed arc welding for structural joints in lab-scale mechanical assemblies.</li>
-            <li>Installed and serviced basic electrical systems within the university mechanical workshop.</li>
-          </ol>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Cybersecurity -->
-  <section id="cybersecurity" class="section">
-    <div class="container">
-      <h2 class="section-title">Cybersecurity Expertise</h2>
-      <div class="grid">
-        <div class="card small-card">
-          <h3>Cisco Ethical Hacking Certification</h3>
-          <img src="resources/Ethical hacking.jpg" alt="Cisco Ethical Hacking Certificate">
-          <p>Trained in penetration testing tools such as Kali Linux & Wireshark.</p>
-        </div>
-        <div class="card small-card">
-          <h3>Specializations</h3>
-          <ul>
-            <li>Industrial Control Systems Security</li>
-            <li>Penetration Testing</li>
-            <li>Risk Assessment</li>
-            <li>Malware Analysis & Reverse Engineering</li>
-          </ul>
-        </div>
-        <div class="card small-card">
-          <h3>Certifications</h3>
-          <p>CompTIA Security+, ISC2 Cybersecurity, CEH (in progress)</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="skills">
-    <h2>Technical Skills</h2>
-    <div class="skills-container">
-      <div class="skill-category">
-        <h3>🔧 Engineering Tools</h3>
-        <ul class="skill-list">
-          <li>SolidWorks</li>
-          <li>AutoCAD</li>
-          <li>MATLAB</li>
-          <li>Inventor</li>
-          <li>Python, C, C++ Programming</li>
-          <li>3D Printing</li>
-          <li>CNC Machining</li>
-        </ul>
-      </div>
-      <div class="skill-category">
-        <h3>🛡️ Security Tools</h3>
-        <ul class="skill-list">
-          <li>Wireshark</li>
-          <li>Nmap</li>
-          <li>Metasploit</li>
-          <li>Burp Suite</li>
-          <li>Kali Linux</li>
-          <li>Python</li>
-          <li>PowerShell</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-<section id="contact" class="section bg-light">
+  </div>
+</header>
+<section id="about" class="section">
   <div class="container">
-    <h2 class="section-title">Get In Touch</h2>
-    <p>If you’d like to collaborate on engineering, tech, or cybersecurity projects — let’s connect!</p>
-    
-    <!-- Contact Info -->
-    <div class="contact-info">
-      <p><i class="fas fa-envelope"></i> 
-        <a href="mailto:edwardsjonathan457@gmail.com">edwardsjonathan457@gmail.com</a>
-      </p>
-      <p><i class="fab fa-whatsapp"></i> 
-        <a href="https://wa.me/254799610782" target="_blank">+254 799 610 782</a>
-      </p>
+    <div class="section-head">
+      <div>
+        <span class="section-tag">// 01 — Profile</span>
+        <h2 class="section-title">About</h2>
+      </div>
+      <p class="section-note">Mechanical Engineering, BSc · Est. 2026<br>Dedan Kimathi University of Technology</p>
     </div>
-
-    <!-- Social Links -->
-    <div class="socials">
-      <a href="https://github.com/jonah-11" target="_blank" title="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/jonathan-edwards-147541318/" target="_blank" title="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://wa.me/254799610782" target="_blank" title="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-      <a href="mailto:edwardsjonathan457@gmail.com" title="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
+    <div class="about-grid">
+      <div>
+        <p>I work at the intersection of mechanical design and the digital systems that increasingly run alongside it. My background spans aircraft maintenance on turboprop control surfaces, CNC fabrication, and most recently, CubeSat structural design at the Kenya Space Agency, where I modeled assemblies in SolidWorks and prepared them for 3D printing on a Bambu Lab printer.</p>
+        <p>Cybersecurity training came out of a simple observation: the machines I was building; CNC rigs, drones, autonomous systems which are also networked endpoints. I picked up ethical hacking and malware analysis fundamentals to understand that side, and to design systems that are secure from the first sketch, not patched afterward.</p>
+        <p>I'm fluent in French, English and Swahili, and I build small software tools on the side; including a flock-management app for poultry farmers and a handful of client websites.</p>
+      </div>
+      <ul class="edu-list">
+        <li>
+          <span class="yr">2026—</span>
+          <div><strong>Kenya Space Agency</strong><span class="sub">Mechanical Engineering Attachee — CubeSat design, orbital mechanics on Ansys AGI STK</span></div>
+        </li>
+        <li>
+          <span class="yr">2022—26</span>
+          <div><strong>Dedan Kimathi University of Technology</strong><span class="sub">BSc Mechanical Engineering</span></div>
+        </li>
+        <li>
+          <span class="yr">CISCO</span>
+          <div><strong>Ethical Hacking</strong><span class="sub">Networking Academy</span></div>
+        </li>
+        <li>
+          <span class="yr">ISC2</span>
+          <div><strong>Cybersecurity Fundamentals</strong><span class="sub">ISC2 / Obrizium</span></div>
+        </li>
+        <li>
+          <span class="yr">PLP</span>
+          <div><strong>Software &amp; Web Development</strong><span class="sub">Power Learn Project</span></div>
+        </li>
+        <li>
+          <span class="yr">CompTIA</span>
+          <div><strong>Security+</strong><span class="sub">Certification</span></div>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
-
-
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>&copy; 2025 Jonathan Edwards. Built with ❤️</p>
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-tag">// 02 — Selected Work</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <p class="section-note">Mechanical builds, embedded systems,<br>software tools, and client sites</p>
     </div>
-  </footer>
+    <div class="subsection-head">
+      <span class="num">A</span>
+      <h3>Aerospace &amp; Simulation</h3>
+      <div class="rule"></div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="thumb"><i class="fa-solid fa-satellite"></i></div>
+        <h4>CubeSat Structural Design</h4>
+        <p>Modeled nanosatellite structures in SolidWorks for the Kenya Space Agency, converting assemblies to .stl for fabrication on a Bambu Lab 3D printer.</p>
+        <div class="tags"><span>SolidWorks</span><span>3D Print</span><span>CubeSat</span></div>
+        <span class="status"><span class="led"></span>Active — KSA</span>
+      </div>
+      <div class="card">
+        <div class="thumb"><i class="fa-solid fa-rocket"></i></div>
+        <h4>Orbital Mechanics &amp; Rocket Stability</h4>
+        <p>Simulated spacecraft, satellites and missiles on Ansys AGI STK, and designed rockets on OpenRocket — varying payload and fin geometry to study center of pressure vs. center of gravity.</p>
+        <div class="tags"><span>Ansys STK</span><span>OpenRocket</span></div>
+        <span class="status"><span class="led"></span>Active — KSA</span>
+      </div>
+      <div class="card">
+        <div class="thumb"><i class="fa-solid fa-wind"></i></div>
+        <h4>CFD Analysis — Ansys Fluent</h4>
+        <p>Fluid dynamics simulations and FEA studies on SolidWorks Simulation, used to validate designs under aerodynamic and structural load before fabrication.</p>
+        <div class="tags"><span>Ansys Fluent</span><span>FEA</span></div>
+      </div>
+    </div>
+    <div class="subsection-head">
+      <span class="num">B</span>
+      <h3>Mechanical &amp; Manufacturing</h3>
+      <div class="rule"></div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="thumb"><img src="resources/avocado.jpg" alt="Avocado oil extractor prototype"></div>
+        <h4>Avocado Oil Extractor</h4>
+        <p>Designed a system to extract oil from avocados using mechanical force, optimizing for yield and energy efficiency.</p>
+        <div class="tags"><span>CAD</span><span>Mechanical Design</span></div>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="resources/cob.jpg" alt="Maize cob shredder"></div>
+        <h4>Maize Cob Shredder</h4>
+        <p>Team-designed shredder helping farmers process maize cobs for easier storage and transport.</p>
+        <div class="tags"><span>CAD</span><span>Team Project</span></div>
+      </div>
+      <div class="card">
+        <div class="thumb"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <h4>Centrifugal Extruder Assembly</h4>
+        <p>Designed and assembled the component parts of an extruder into a fully working machine.</p>
+        <div class="tags"><span>Fabrication</span><span>Assembly</span></div>
+      </div>
+    </div>
+    <div class="subsection-head">
+      <span class="num">C</span>
+      <h3>Embedded &amp; Automation</h3>
+      <div class="rule"></div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="thumb"><img src="resources/arduino.jpg" alt="Arduino ultrasonic sensor setup"></div>
+        <h4>Arduino Ultrasonic Sensor</h4>
+        <p>Proximity-based LED control system built with Arduino and an ultrasonic sensor.</p>
+        <div class="tags"><span>Arduino</span><span>Sensors</span></div>
+      </div>
+      <div class="card">
+        <div class="thumb"><i class="fa-solid fa-shield-halved"></i></div>
+        <h4>Automated Security Gate</h4>
+        <p>Ultrasonic-sensor gate opener with servo actuation. Simulates intruder detection by triggering house lights on a proximity breach.</p>
+        <div class="tags"><span>Arduino</span><span>Servos</span><span>Security</span></div>
+      </div>
+    </div>
+    <div class="subsection-head">
+      <span class="num">D</span>
+      <h3>Software &amp; Apps</h3>
+      <div class="rule"></div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="thumb"><i class="fa-solid fa-feather-pointed"></i></div>
+        <h4>Poultry Tracker</h4>
+        <p>Android app helping small-scale farmers manage their flock digitally — tracking feed, health, production and a farmer-to-farmer marketplace.</p>
+        <div class="tags"><span>Android</span><span>Kotlin</span><span>Compose</span></div>
+        <span class="status live"><span class="led"></span>In Development</span>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="resources/graph.jpg" alt="Graph plotter web app"></div>
+        <h4>Graph Plotter</h4>
+        <p>Browser-based graph plotting tool built for students and teachers.</p>
+        <div class="tags"><span>JavaScript</span><span>Web App</span></div>
+        <a href="https://graphplotter-jonah-11s-projects.vercel.app/" target="_blank" rel="noopener" class="visit">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="resources/work.jpg" alt="Workfinder app"></div>
+        <h4>Workfinder</h4>
+        <p>Web app connecting job seekers with available work opportunities.</p>
+        <div class="tags"><span>Web App</span></div>
+        <a href="https://workfinder.netlify.app/" target="_blank" rel="noopener" class="visit">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="resources/expense.jpg" alt="Expense tracker app"></div>
+        <h4>Expense Tracker</h4>
+        <p>Personal finance manager for tracking income, expenses and budgets.</p>
+        <div class="tags"><span>Web App</span></div>
+        <a href="https://the-001-finance-manager.netlify.app/" target="_blank" rel="noopener" class="visit">Visit Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+    <div class="subsection-head">
+      <span class="num">E</span>
+      <h3>Client &amp; Organisation Websites</h3>
+      <div class="rule"></div>
+    </div>
+    <div class="client-list">
+      <div class="client-row">
+        <div class="name">Strategic Management Solutions<span>strategicmanagement.co.ke</span></div>
+        <span class="role">Web Development</span>
+        <a href="https://strategicmanagement.co.ke" target="_blank" rel="noopener" class="visit-arrow" aria-label="Visit Strategic Management Solutions"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+      <div class="client-row">
+        <div class="name">ISM Kenya<span>ismkenya.africa</span></div>
+        <span class="role">Web Development</span>
+        <a href="https://ismkenya.africa" target="_blank" rel="noopener" class="visit-arrow" aria-label="Visit ISM Kenya"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+      <div class="client-row">
+        <div class="name">Teens for Teens Kenya<span>teensforteenskenya.netlify.app</span></div>
+        <span class="role">Web Development</span>
+        <a href="https://teensforteenskenya.netlify.app" target="_blank" rel="noopener" class="visit-arrow" aria-label="Visit Teens for Teens Kenya"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+      <div class="client-row">
+        <div class="name">CEGK<span>cegk.netlify.app</span></div>
+        <span class="role">Web Development</span>
+        <a href="https://cegk.netlify.app" target="_blank" rel="noopener" class="visit-arrow" aria-label="Visit CEGK"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="experience" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-tag">// 03 — Work History</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <p class="section-note">Hands-on attachments across aerospace,<br>manufacturing and finance/security</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="when">Feb 2026 — May 2026<span class="now">Current</span></div>
+        <div>
+          <h3>Mechanical Engineering Attachee</h3>
+          <span class="org">Kenya Space Agency, Nairobi</span>
+          <ul>
+            <li>Modeled CubeSat nanosatellite structures in SolidWorks and converted assemblies to .stl for fabrication on a Bambu Lab 3D printer.</li>
+            <li>Ran spacecraft simulations — satellites, missiles, and rockets — on Ansys AGI STK to study orbital mechanics.</li>
+            <li>Designed rockets in OpenRocket, varying payload and fin configurations to evaluate stability and the relationship between center of pressure and center of gravity.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="when">Feb 2025 — Apr 2025</div>
+        <div>
+          <h3>Mechanical Engineering Attachee</h3>
+          <span class="org">Skyward Airlines, Wilson Airport</span>
+          <ul>
+            <li>Participated in aircraft maintenance operations, including A-checks and C-checks per KCAA protocols.</li>
+            <li>Worked on flight control surfaces such as flaps and assisted in servicing deicing boots on turboprop aircraft.</li>
+            <li>Followed airworthiness and safety-critical inspection procedures using Aircraft Maintenance Manuals (AMMs).</li>
+            <li>Maintained aviation security through tool accountability, area clearance, and part traceability.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="when">Dec 2024</div>
+        <div>
+          <h3>Cybersecurity Virtual Experience</h3>
+          <span class="org">Mastercard, via Forage</span>
+          <ul>
+            <li>Completed a job simulation as an analyst on Mastercard's Security Awareness Team.</li>
+            <li>Helped identify and report security threats such as phishing.</li>
+            <li>Analyzed which business areas needed stronger security and developed targeted training procedures.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="when">Jan 2024 — Dec 2024</div>
+        <div>
+          <h3>Mechanical Engineering Attachee</h3>
+          <span class="org">Dedan Kimathi University of Technology</span>
+          <ul>
+            <li>Designed and optimized machine components using CAD, cutting material waste by 15% in CNC fabrication.</li>
+            <li>Operated lathe, milling, and drilling machines to produce mechanical parts.</li>
+            <li>Carried out arc welding for structural joints in lab-scale mechanical assemblies.</li>
+            <li>Installed and serviced basic electrical systems within the university mechanical workshop.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="cybersecurity" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-tag">// 04 — Secure by Design</span>
+        <h2 class="section-title">Cybersecurity</h2>
+      </div>
+      <p class="section-note">Applied to the same connected systems<br>I build as a mechanical engineer</p>
+    </div>
+    <div class="cyber-grid">
+      <div class="cyber-card">
+        <span class="badge">Certified</span>
+        <h3>Ethical Hacking — Cisco Networking Academy</h3>
+        <img src="resources/Ethical hacking.jpg" alt="Cisco Ethical Hacking certificate">
+        <p>Trained in penetration testing tools including Kali Linux and Wireshark, with a focus on identifying vulnerabilities before they're exploited.</p>
+      </div>
+      <div class="cyber-card">
+        <h3>Specializations</h3>
+        <ul>
+          <li>Industrial Control Systems Security</li>
+          <li>Penetration Testing</li>
+          <li>Risk Assessment</li>
+          <li>Malware Analysis &amp; Reverse Engineering</li>
+        </ul>
+      </div>
+      <div class="cyber-card">
+        <h3>Certifications</h3>
+        <ul>
+          <li>CompTIA Security+</li>
+          <li>ISC2 Cybersecurity Fundamentals</li>
+          <li>CEH — in progress</li>
+          <li>Mastercard Security Awareness (Forage)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-tag">// 05 — Toolkit</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3><i class="fa-solid fa-gear"></i>Engineering &amp; Simulation</h3>
+        <ul class="skill-list">
+          <li>SolidWorks</li><li>AutoCAD</li><li>Ansys Fluent</li><li>Ansys AGI STK</li>
+          <li>FEA</li><li>CNC Machining</li><li>Lathe / Milling / Drilling</li><li>Welding</li><li>3D Printing</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fa-solid fa-code"></i>Programming &amp; Data</h3>
+        <ul class="skill-list">
+          <li>Python</li><li>C</li><li>C++</li><li>HTML / CSS</li><li>JavaScript</li>
+          <li>Pandas</li><li>NumPy</li><li>matplotlib</li><li>scikit-learn</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fa-solid fa-shield-halved"></i>Security</h3>
+        <ul class="skill-list">
+          <li>Wireshark</li><li>Nmap</li><li>Metasploit</li><li>Burp Suite</li><li>Kali Linux</li><li>PowerShell</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fa-solid fa-microchip"></i>Hardware &amp; IoT</h3>
+        <ul class="skill-list">
+          <li>Arduino</li><li>Servos</li><li>Ultrasonic Sensors</li><li>IR Sensors</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <h2 class="big">Let's build<br>something <span class="accent">resilient</span>.</h2>
+        <p>Open to engineering, cybersecurity, and software collaborations — or just a conversation about CubeSats, CNC, or CFD.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:edwardsjonathan457@gmail.com">
+          <span class="icon"><i class="fa-solid fa-envelope"></i>edwardsjonathan457@gmail.com</span>
+          <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+        </a>
+        <a href="https://wa.me/254799610782" target="_blank" rel="noopener">
+          <span class="icon"><i class="fa-brands fa-whatsapp"></i>+254 799 610 782</span>
+          <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+        </a>
+        <a href="https://github.com/knight-dale" target="_blank" rel="noopener">
+          <span class="icon"><i class="fa-brands fa-github"></i>github.com/knight-dale</span>
+          <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jonathan-edwards-147541318/" target="_blank" rel="noopener">
+          <span class="icon"><i class="fa-brands fa-linkedin"></i>LinkedIn — Jonathan Edwards</span>
+          <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container footer-content">
+    <span>&copy; 2026 Jonathan Edwards. Kakamega, Kenya.</span>
+    <div class="footer-socials">
+      <a href="https://github.com/knight-dale" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jonathan-edwards-147541318/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://wa.me/254799610782" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="mailto:edwardsjonathan457@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
